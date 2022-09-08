@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Objects;
 
 @Service
 public class UserService {
@@ -12,23 +13,31 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    public Double getAllByArea() {
-        List<String> area = userRepository.getAllByArea();
-        return area.stream().mapToDouble(Double::valueOf).sum();
+    public Double getAllSumByQ11() {
+        List<String> q11 = userRepository.getAllByQ11();
+        return q11.stream().filter(Objects::nonNull).mapToDouble(Double::valueOf).sum();
+    }
+    public long getAllCountByQ11() {
+        List<String> q11 = userRepository.getAllByQ11();
+        return q11.stream().filter(Objects::nonNull).count();
     }
 
-    public Double getAllByShare() {
-        List<String> share = userRepository.getAllByShare();
-        return share.stream().mapToDouble(Double::valueOf).sum();
+    public Double getAllSumByQ12() {
+        List<String> q12 = userRepository.getAllByQ12();
+        return q12.stream().filter(Objects::nonNull).mapToDouble(Double::valueOf).sum();
+    }
+    public long getAllCountByQ12() {
+        List<String> q12 = userRepository.getAllByQ12();
+        return q12.stream().filter(Objects::nonNull).count();
     }
 
-    public Double getAllByQ11(String status) {
-        List<String> q11 = userRepository.getAllByQ11(status);
-        return q11.stream().mapToDouble(Double::valueOf).sum();
+    public Double getAllSumByQ13() {
+        List<String> q13 = userRepository.getAllByQ13();
+        return q13.stream().filter(Objects::nonNull).mapToDouble(Double::valueOf).sum();
     }
-    public Long getAllUserByQ11(String status) {
-        List<String> q11 = userRepository.getAllByQ11(status);
-        return q11.stream().mapToDouble(Double::valueOf).filter((p) -> p > 0).count();
+    public long getAllCountByQ13() {
+        List<String> q13 = userRepository.getAllByQ13();
+        return q13.stream().filter(Objects::nonNull).count();
     }
     public Double getAllByShareTrue(String status) {
         List<String> shareTrue = userRepository.getAllByShareTrue(status);
@@ -38,34 +47,6 @@ public class UserService {
     public Integer getAllByStatusTrue(String status) {
         List<String> statusTrue = userRepository.getAllByStatusTrue(status);
         return statusTrue.stream().mapToInt(Integer::valueOf).sum();
-    }
-
-    public String getFio(Integer id) {
-        return userRepository.getUserByFio(id);
-    }
-
-    public Integer getIdUserFlat(String flat) {
-        return userRepository.getIdByUser(flat);
-    }
-
-    public void updateUserStatus(Integer id, String status) {
-        userRepository.updateStatusByUser(id, status);
-    }
-
-    public String getStatusUser(Integer id) {
-        return userRepository.getStatusByUser(id);
-    }
-
-    public String getPassword(Integer id) {
-        return userRepository.getPasswordByUser(id);
-    }
-
-    public String getShare(Integer id) {
-        return userRepository.getShareByUser(id);
-    }
-
-    public String getArea(Integer id) {
-        return userRepository.getAreaByUser(id);
     }
 
 }

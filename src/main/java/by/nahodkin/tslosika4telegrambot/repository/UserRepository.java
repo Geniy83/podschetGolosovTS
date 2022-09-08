@@ -13,40 +13,21 @@ import java.util.List;
 @Transactional
 public interface UserRepository extends JpaRepository<User, String> {
 
-    @Query("select area from User")
-    List<String> getAllByArea();
-
-    @Query("select share from User")
-    List<String> getAllByShare();
-
     @Query("select share from User where status =:status")
     List<String> getAllByShareTrue(@Param("status") String status);
-
-    @Query("select q11 from User where status =:status")
-    List<String> getAllByQ11(@Param("status") String status);
-
     @Query("select status from User where status =:status")
     List<String> getAllByStatusTrue(@Param("status") String status);
 
-    @Query("select fio from User where id =:id")
-    String getUserByFio(@Param("id") Integer id);
+    // --------------------- Вопрос 1 -------------------------------------
+    @Query("select q11 from User")
+    List<String> getAllByQ11();
+    @Query("select q12 from User")
+    List<String> getAllByQ12();
+    @Query("select q13 from User")
+    List<String> getAllByQ13();
+    // --------------------- Вопрос 2 -------------------------------------
 
-    @Modifying
-    @Query("update User set status =:status where id =:id")
-    void updateStatusByUser(@Param("id") Integer id, @Param("status") String status);
 
-    @Query("select status from User where id =:id")
-    String getStatusByUser(@Param("id") Integer id);
 
-    @Query("select password from User where id =:id")
-    String getPasswordByUser(@Param("id") Integer id);
 
-    @Query("select area from User where id =:id")
-    String getAreaByUser(@Param("id") Integer id);
-
-    @Query("select share from User where id =:id")
-    String getShareByUser(@Param("id") Integer id);
-
-    @Query("select id from User where flat =:flat")
-    Integer getIdByUser(@Param("flat") String flat);
 }
