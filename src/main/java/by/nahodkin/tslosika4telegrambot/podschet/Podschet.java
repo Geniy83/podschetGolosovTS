@@ -26,18 +26,18 @@ public class Podschet {
 
         if(VsegoProgolosovalo >= 60 && DolyVsegoProgolosovalo >= 66.6) {
             System.out.println("Собрание состоялось");
-            System.out.println("Проголосовало " + userService.getAllByStatusTrue("1") + " собственников, обладающие долей от общего имущества " + userService.getAllByShareTrue("1") + " %");
+            System.out.println("Проголосовало " + userService.getAllByStatusTrue("1") + " собственников обладающие долей от общего имущества " + userService.getAllByShareTrue("1") + " %");
 
             if ((ProgolosovaloZa1 >= VsegoProgolosovalo/2) && (ProgolosovaloZaDoly1 >= DolyVsegoProgolosovalo/2)) {
                 System.out.println("Вопрос 1 - Принят");
-                System.out.println("ЗА проголосовало " + ProgolosovaloZa1 + " человек обладающих долями = "+ ProgolosovaloZaDoly1 + "%");
-                System.out.println("ПРОТИВ проголосовало " + ProgolosovaloProtiv1 + " человек обладающих долями = " + ProgolosovaloProtivDoly1 + "%");
-                System.out.println("ВОЗДЕРЖАЛОСЬ проголосовало " + ProgolosovaloVozder1 + " человек обладающих долями = " + ProgolosovaloVozderDoly1 + "%");
+                System.out.println("ЗА - " + ProgolosovaloZa1 + " человек обладающих долями = "+ ProgolosovaloZaDoly1 + "%, что составляет " + (ProgolosovaloZaDoly1*100/DolyVsegoProgolosovalo) + "%");
+                System.out.println("ПРОТИВ - " + ProgolosovaloProtiv1 + " человек обладающих долями = " + ProgolosovaloProtivDoly1 + "%");
+                System.out.println("ВОЗДЕРЖАЛОСЬ - " + ProgolosovaloVozder1 + " человек обладающих долями = " + ProgolosovaloVozderDoly1 + "%");
             } else {
                 System.out.println("Вопрос 1 - Не принят");
-                System.out.println("ЗА проголосовало " + ProgolosovaloZa1 + " человек обладающих долями = " + ProgolosovaloZaDoly1 + "%");
-                System.out.println("ПРОТИВ проголосовало " + ProgolosovaloProtiv1 + " человек обладающих долями = " + ProgolosovaloProtivDoly1 + "%");
-                System.out.println("ВОЗДЕРЖАЛОСЬ проголосовало " + ProgolosovaloVozder1 + " человек обладающих долями = " + ProgolosovaloVozderDoly1 + "%");
+                System.out.println("ЗА - " + ProgolosovaloZa1 + " человек обладающих долями = " + ProgolosovaloZaDoly1 + "%");
+                System.out.println("ПРОТИВ - " + ProgolosovaloProtiv1 + " человек обладающих долями = " + ProgolosovaloProtivDoly1 + "%");
+                System.out.println("ВОЗДЕРЖАЛОСЬ - " + ProgolosovaloVozder1 + " человек обладающих долями = " + ProgolosovaloVozderDoly1 + "%");
             }
 
 
@@ -45,7 +45,7 @@ public class Podschet {
 
         } else {
             System.out.println("Собрание не состоялось");
-            System.out.println("Проголосовало " + userService.getAllByStatusTrue("1") + " собственников, обладающие долей от общего имущества " + userService.getAllByShareTrue("1") + " %");
+            System.out.println("Проголосовало " + userService.getAllByStatusTrue("1") + " собственников обладающие долей от общего имущества " + userService.getAllByShareTrue("1") + " %");
 
         }
     }
