@@ -97,7 +97,7 @@ public class Podschet {
             System.out.println();
             if ((ProgolosovaloZa1 >= VsegoProgolosovalo/2) && (ProgolosovaloZaDoly1 >= DolyVsegoProgolosovalo/2)) {
                 System.out.println("Вопрос 1 - Принят");
-                System.out.println("ЗА - " + ProgolosovaloZa1 + " человек обладающих долями = "+ ProgolosovaloZaDoly1 + "%, что составляет " + (ProgolosovaloZaDoly1*100/DolyVsegoProgolosovalo) + "%");
+                System.out.println("ЗА - " + ProgolosovaloZa1 + " человек обладающих долями = "+ ProgolosovaloZaDoly1 + "%");
                 System.out.println("ПРОТИВ - " + ProgolosovaloProtiv1 + " человек обладающих долями = " + ProgolosovaloProtivDoly1 + "%");
                 System.out.println("ВОЗДЕРЖАЛОСЬ - " + ProgolosovaloVozder1 + " человек обладающих долями = " + ProgolosovaloVozderDoly1 + "%");
             } else {
@@ -111,7 +111,7 @@ public class Podschet {
             System.out.println();
             if ((ProgolosovaloZa2 >= VsegoProgolosovalo/2) && (ProgolosovaloZaDoly2 >= DolyVsegoProgolosovalo/2)) {
                 System.out.println("Вопрос 2 - Принят");
-                System.out.println("ЗА - " + ProgolosovaloZa2 + " человек обладающих долями = "+ ProgolosovaloZaDoly2 + "%, что составляет " + (ProgolosovaloZaDoly2*100/DolyVsegoProgolosovalo) + "%");
+                System.out.println("ЗА - " + ProgolosovaloZa2 + " человек обладающих долями = "+ ProgolosovaloZaDoly2 + "%");
                 System.out.println("ПРОТИВ - " + ProgolosovaloProtiv2 + " человек обладающих долями = " + ProgolosovaloProtivDoly2 + "%");
                 System.out.println("ВОЗДЕРЖАЛОСЬ - " + ProgolosovaloVozder2 + " человек обладающих долями = " + ProgolosovaloVozderDoly2 + "%");
             } else {
@@ -125,7 +125,7 @@ public class Podschet {
             System.out.println();
             if ((ProgolosovaloZa3 >= VsegoProgolosovalo/2) && (ProgolosovaloZaDoly3 >= DolyVsegoProgolosovalo/2)) {
                 System.out.println("Вопрос 3 - Принят");
-                System.out.println("ЗА - " + ProgolosovaloZa3 + " человек обладающих долями = "+ ProgolosovaloZaDoly3 + "%, что составляет " + (ProgolosovaloZaDoly3*100/DolyVsegoProgolosovalo) + "%");
+                System.out.println("ЗА - " + ProgolosovaloZa3 + " человек обладающих долями = "+ ProgolosovaloZaDoly3 + "%");
                 System.out.println("ПРОТИВ - " + ProgolosovaloProtiv3 + " человек обладающих долями = " + ProgolosovaloProtivDoly3 + "%");
                 System.out.println("ВОЗДЕРЖАЛОСЬ - " + ProgolosovaloVozder3 + " человек обладающих долями = " + ProgolosovaloVozderDoly3 + "%");
             } else {
@@ -139,7 +139,7 @@ public class Podschet {
             System.out.println();
             if ((ProgolosovaloZa4 >= VsegoProgolosovalo/2) && (ProgolosovaloZaDoly4 >= DolyVsegoProgolosovalo/2)) {
                 System.out.println("Вопрос 4 - Принят");
-                System.out.println("ЗА - " + ProgolosovaloZa4 + " человек обладающих долями = "+ ProgolosovaloZaDoly4 + "%, что составляет " + (ProgolosovaloZaDoly4*100/DolyVsegoProgolosovalo) + "%");
+                System.out.println("ЗА - " + ProgolosovaloZa4 + " человек обладающих долями = "+ ProgolosovaloZaDoly4 + "%");
                 System.out.println("ПРОТИВ - " + ProgolosovaloProtiv4 + " человек обладающих долями = " + ProgolosovaloProtivDoly4 + "%");
                 System.out.println("ВОЗДЕРЖАЛОСЬ - " + ProgolosovaloVozder4 + " человек обладающих долями = " + ProgolosovaloVozderDoly4 + "%");
             } else {
@@ -153,7 +153,7 @@ public class Podschet {
             System.out.println();
             if ((ProgolosovaloZa5 >= VsegoProgolosovalo/2) && (ProgolosovaloZaDoly5 >= DolyVsegoProgolosovalo/2)) {
                 System.out.println("Вопрос 5 - Принят");
-                System.out.println("ЗА - " + ProgolosovaloZa5 + " человек обладающих долями = "+ ProgolosovaloZaDoly5 + "%, что составляет " + (ProgolosovaloZaDoly5*100/DolyVsegoProgolosovalo) + "%");
+                System.out.println("ЗА - " + ProgolosovaloZa5 + " человек обладающих долями = "+ ProgolosovaloZaDoly5 + "%");
                 System.out.println("ПРОТИВ - " + ProgolosovaloProtiv5 + " человек обладающих долями = " + ProgolosovaloProtivDoly5 + "%");
                 System.out.println("ВОЗДЕРЖАЛОСЬ - " + ProgolosovaloVozder5 + " человек обладающих долями = " + ProgolosovaloVozderDoly5 + "%");
             } else {
@@ -167,7 +167,7 @@ public class Podschet {
             System.out.println();
             if ((ProgolosovaloZa6 >= VsegoProgolosovalo/2) && (ProgolosovaloZaDoly6 >= DolyVsegoProgolosovalo/2)) {
                 System.out.println("Вопрос 6 - Принят");
-                System.out.println("ЗА - " + ProgolosovaloZa6 + " человек обладающих долями = "+ ProgolosovaloZaDoly6 + "%, что составляет " + (ProgolosovaloZaDoly6*100/DolyVsegoProgolosovalo) + "%");
+                System.out.println("ЗА - " + ProgolosovaloZa6 + " человек обладающих долями = "+ ProgolosovaloZaDoly6 + "%");
                 System.out.println("ПРОТИВ - " + ProgolosovaloProtiv6 + " человек обладающих долями = " + ProgolosovaloProtivDoly6 + "%");
                 System.out.println("ВОЗДЕРЖАЛОСЬ - " + ProgolosovaloVozder6 + " человек обладающих долями = " + ProgolosovaloVozderDoly6 + "%");
             } else {
@@ -181,7 +181,7 @@ public class Podschet {
             System.out.println();
             if ((ProgolosovaloZa7 >= VsegoProgolosovalo/2) && (ProgolosovaloZaDoly7 >= DolyVsegoProgolosovalo/2)) {
                 System.out.println("Вопрос 7 - Принят");
-                System.out.println("ЗА - " + ProgolosovaloZa7 + " человек обладающих долями = "+ ProgolosovaloZaDoly7 + "%, что составляет " + (ProgolosovaloZaDoly7*100/DolyVsegoProgolosovalo) + "%");
+                System.out.println("ЗА - " + ProgolosovaloZa7 + " человек обладающих долями = "+ ProgolosovaloZaDoly7 + "%");
                 System.out.println("ПРОТИВ - " + ProgolosovaloProtiv7 + " человек обладающих долями = " + ProgolosovaloProtivDoly7 + "%");
                 System.out.println("ВОЗДЕРЖАЛОСЬ - " + ProgolosovaloVozder7 + " человек обладающих долями = " + ProgolosovaloVozderDoly7 + "%");
             } else {
@@ -195,7 +195,7 @@ public class Podschet {
             System.out.println();
             if ((ProgolosovaloZa8 >= VsegoProgolosovalo/2) && (ProgolosovaloZaDoly8 >= DolyVsegoProgolosovalo/2)) {
                 System.out.println("Вопрос 8 - Принят");
-                System.out.println("ЗА - " + ProgolosovaloZa8 + " человек обладающих долями = "+ ProgolosovaloZaDoly8 + "%, что составляет " + (ProgolosovaloZaDoly8*100/DolyVsegoProgolosovalo) + "%");
+                System.out.println("ЗА - " + ProgolosovaloZa8 + " человек обладающих долями = "+ ProgolosovaloZaDoly8 + "%");
                 System.out.println("ПРОТИВ - " + ProgolosovaloProtiv8 + " человек обладающих долями = " + ProgolosovaloProtivDoly8 + "%");
                 System.out.println("ВОЗДЕРЖАЛОСЬ - " + ProgolosovaloVozder8 + " человек обладающих долями = " + ProgolosovaloVozderDoly8 + "%");
             } else {
@@ -209,7 +209,7 @@ public class Podschet {
             System.out.println();
             if ((ProgolosovaloZa9 >= VsegoProgolosovalo/2) && (ProgolosovaloZaDoly9 >= DolyVsegoProgolosovalo/2)) {
                 System.out.println("Вопрос 9 - Принят");
-                System.out.println("ЗА - " + ProgolosovaloZa9 + " человек обладающих долями = "+ ProgolosovaloZaDoly9 + "%, что составляет " + (ProgolosovaloZaDoly9*100/DolyVsegoProgolosovalo) + "%");
+                System.out.println("ЗА - " + ProgolosovaloZa9 + " человек обладающих долями = "+ ProgolosovaloZaDoly9 + "%");
                 System.out.println("ПРОТИВ - " + ProgolosovaloProtiv9 + " человек обладающих долями = " + ProgolosovaloProtivDoly9 + "%");
                 System.out.println("ВОЗДЕРЖАЛОСЬ - " + ProgolosovaloVozder9 + " человек обладающих долями = " + ProgolosovaloVozderDoly9 + "%");
             } else {
