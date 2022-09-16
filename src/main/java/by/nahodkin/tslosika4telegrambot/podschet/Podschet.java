@@ -12,16 +12,22 @@ public class Podschet {
 
     public void protocol() {
 
-        Integer VsegoProgolosovalo = userService.getAllByStatusTrue("1");
+        Double VsegoProgolosovalo = Double.valueOf(userService.getAllByStatusTrue("1"));
         Double DolyVsegoProgolosovalo = userService.getAllByShareTrue("1");
 
         //--------------------- Вопрос 1 ---------------------------------
         long ProgolosovaloZa1 = userService.getAllCountByQ11();
-        Double ProgolosovaloZaDoly1 = userService.getAllSumByQ11();
+        double ProgolosovaloZaDoly1 = userService.getAllSumByQ11();
         long ProgolosovaloProtiv1 = userService.getAllCountByQ12();
-        Double ProgolosovaloProtivDoly1 = userService.getAllSumByQ12();
+        double ProgolosovaloProtivDoly1 = userService.getAllSumByQ12();
         long ProgolosovaloVozder1 = userService.getAllCountByQ13();
-        Double ProgolosovaloVozderDoly1 = userService.getAllSumByQ13();
+        double ProgolosovaloVozderDoly1 = userService.getAllSumByQ13();
+        double Za11 = ProgolosovaloZa1 * 100 / VsegoProgolosovalo;
+        double Za12 = ProgolosovaloZaDoly1 * 100 / DolyVsegoProgolosovalo;
+        double Protiv11 = ProgolosovaloProtiv1 * 100 / VsegoProgolosovalo;
+        double Protiv12 = ProgolosovaloProtivDoly1 * 100 / DolyVsegoProgolosovalo;
+        double Vozder11 = ProgolosovaloVozder1 * 100 / VsegoProgolosovalo;
+        double Vozder12 = ProgolosovaloVozderDoly1 * 100 / DolyVsegoProgolosovalo;
 
         //--------------------- Вопрос 2 ---------------------------------
         long ProgolosovaloZa2 = userService.getAllCountByQ21();
@@ -97,14 +103,14 @@ public class Podschet {
             System.out.println();
             if ((ProgolosovaloZa1 >= VsegoProgolosovalo/2) && (ProgolosovaloZaDoly1 >= DolyVsegoProgolosovalo/2)) {
                 System.out.println("Вопрос 1 - Принят");
-                System.out.println("ЗА - " + ProgolosovaloZa1 + " человек обладающих долями = "+ ProgolosovaloZaDoly1 + "%");
-                System.out.println("ПРОТИВ - " + ProgolosovaloProtiv1 + " человек обладающих долями = " + ProgolosovaloProtivDoly1 + "%");
-                System.out.println("ВОЗДЕРЖАЛОСЬ - " + ProgolosovaloVozder1 + " человек обладающих долями = " + ProgolosovaloVozderDoly1 + "%");
+                System.out.println("ЗА - " + ProgolosovaloZa1 + " (" + Za11 + "%)" + " человек обладающих долями = "+ ProgolosovaloZaDoly1 + " (" + Za12 + "%)");
+                System.out.println("ПРОТИВ - " + ProgolosovaloProtiv1 + " (" + Protiv11 + "%)" + " человек обладающих долями = " + ProgolosovaloProtivDoly1 + " (" + Protiv12 + "%)");
+                System.out.println("ВОЗДЕРЖАЛОСЬ - " + ProgolosovaloVozder1 + " (" + Vozder11 + "%)" + " человек обладающих долями = " + ProgolosovaloVozderDoly1 + " (" + Vozder12 + "%)");
             } else {
                 System.out.println("Вопрос 1 - Не принят");
-                System.out.println("ЗА - " + ProgolosovaloZa1 + " человек обладающих долями = " + ProgolosovaloZaDoly1 + "%");
-                System.out.println("ПРОТИВ - " + ProgolosovaloProtiv1 + " человек обладающих долями = " + ProgolosovaloProtivDoly1 + "%");
-                System.out.println("ВОЗДЕРЖАЛОСЬ - " + ProgolosovaloVozder1 + " человек обладающих долями = " + ProgolosovaloVozderDoly1 + "%");
+                System.out.println("ЗА - " + ProgolosovaloZa1 + " (" + Za11 + "%)" + " человек обладающих долями = "+ ProgolosovaloZaDoly1 + " (" + Za12 + "%)");
+                System.out.println("ПРОТИВ - " + ProgolosovaloProtiv1 + " (" + Protiv11 + "%)" + " человек обладающих долями = " + ProgolosovaloProtivDoly1 + " (" + Protiv12 + "%)");
+                System.out.println("ВОЗДЕРЖАЛОСЬ - " + ProgolosovaloVozder1 + " (" + Vozder11 + "%)" + " человек обладающих долями = " + ProgolosovaloVozderDoly1 + " (" + Vozder12 + "%)");
             }
 
             //--------------------------------- Вопрос 2 ---------------------------------------------
